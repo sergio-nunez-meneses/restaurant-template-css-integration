@@ -9,3 +9,6 @@ header{
   background-attachment: fixed;
   background-position: 50% 0px;
 }
+
+#header-title{
+  color:rgba(255, 255, 255, 0.80);
