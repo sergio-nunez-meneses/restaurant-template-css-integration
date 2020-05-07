@@ -2,7 +2,7 @@ body {
   font-family: Georgia, serif;
 }
 
-header{
+header {
   background-image: url("img/food-bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,8 +10,12 @@ header{
   background-position: 50% 0px;
 }
 
-#header-title{
-  color:rgba(255, 255, 255, 0.80);
+.text-gold {
+  color: #c90;
+}
+
+#header-title {
+  color: rgba(255, 255, 255, 0.80);
 }
 
 nav {
@@ -22,19 +26,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;
 }
 
-#logo{
+#logo {
   max-width: 10rem;
 }
 
-#see-the-menu:hover{
+#see-the-menu:hover {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
 }
 
-#food-bg-2{
-  background-image: url("img/food-bg-2.jpg");
+#food-bg-2 {
+  background-image: url("img/ingredients-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 0px;
+}
+
+.img-contain {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
 }
