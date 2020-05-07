@@ -1,5 +1,5 @@
 body {
-  font-family: cursive; sans-serif;
+  font-family: Georgia, serif;
 }
 
 header{
@@ -12,3 +12,29 @@ header{
 
 #header-title{
   color:rgba(255, 255, 255, 0.80);
+}
+
+nav {
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+}
+
+#logo{
+  max-width: 10rem;
+}
+
+#see-the-menu:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+#food-bg-2{
+  background-image: url("img/food-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0px;
+}
