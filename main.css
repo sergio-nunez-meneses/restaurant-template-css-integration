@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.background-img{
+.background-img {
   background-image: url("img/bg-1.jpg");
 }
 
@@ -45,10 +45,10 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 0px;
- }
+}
 
-.text-block{
-background-color: rgba(0, 0, 0, 0.8);
+.text-block {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .img-contain {
@@ -57,7 +57,97 @@ background-color: rgba(0, 0, 0, 0.8);
   height: auto;
 }
 
-.pasta{
+.pasta {
   max-width: 67px;
 }
 
+food-menu-block {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQMAAACxAfVuAAAABlBMVEX////w8PBJB7MPAAAAb0lEQVR4AWPgcRY4YohGMAi1LNTwQiMYFDmcBFrQCAanCUs0udAIhpZECTdBNIKhR5njkAEawRAk0qrogUZgtyhgiiqnExrB0JEk0aaIRpDno1Efjfpo1EejPhr10aiPRn006qNRH436aNRHoz4CAJ/efK4MkeqgAAAAAElFTkSuQmCC) 0 0 repeat;
+}
+
+.food-menu-content {
+  float: left;
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.food-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 60px 0;
+}
+
+.food-menu-list .food-menu-item {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.food-menu-list .food-menu-item-special {
+  border: 1px solid #b6a46c;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+
+.food-menu-list .food-menu-item-special:after {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 30px;
+  content: "Special";
+  display: block;
+  position: absolute;
+  height: 30px;
+  top: -30px;
+  right: -1px;
+  font-weight: 700;
+  padding: 0 5px;
+  background: #cd9f0b;
+  background: rgba(205, 159, 11, 0.8);
+  color: #fff;
+}
+
+.food-menu-heading {
+  font-family: Georgia, serif;
+  color: #cd9f0b;
+  width: 50%;
+  float: left;
+  padding: 0;
+  text-align: left;
+}
+
+.food-menu-price {
+  font-family: Georgia, serif;
+  float: left;
+  color: #cd9f0b;
+  width: 50%;
+  padding: 0;
+  text-align: right;
+}
+
+.heading {
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: .2em;
+  color: #c90;
+  font-weight: 400;
+}
+
+.divider-secondary, .heading:after {
+  background-image: url(img/decor-2-big-gold.png);
+  height: 40px;
+}
+
+h3, .fs-3, .food-menu-heading, .food-menu-price {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 28px;
+  line-height: 1.75rem;
+}
+
+.content-block {
+  padding-top: 70px;
+}
