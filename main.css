@@ -22,10 +22,6 @@ nav {
   font-family: Georgia, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, serif;
-}
-
 #logo {
   max-width: 10rem;
 }
@@ -35,9 +31,6 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.background-img {
-  background-image: url("img/bg-1.jpg");
-}
 
 #food-bg-2 {
   background-image: url("img/ingredients-bg.jpg");
@@ -59,10 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .pasta {
   max-width: 67px;
-}
-
-food-menu-block {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQMAAACxAfVuAAAABlBMVEX////w8PBJB7MPAAAAb0lEQVR4AWPgcRY4YohGMAi1LNTwQiMYFDmcBFrQCAanCUs0udAIhpZECTdBNIKhR5njkAEawRAk0qrogUZgtyhgiiqnExrB0JEk0aaIRpDno1Efjfpo1EejPhr10aiPRn006qNRH436aNRHoz4CAJ/efK4MkeqgAAAAAElFTkSuQmCC) 0 0 repeat;
 }
 
 .food-menu-content {
@@ -136,11 +125,6 @@ h2 {
   font-weight: 400;
 }
 
-.divider-secondary, .heading:after {
-  background-image: url(img/decor-2-big-gold.png);
-  height: 40px;
-}
-
 h3, .fs-3, .food-menu-heading, .food-menu-price {
   font-size: 22px;
   font-size: 1.375rem;
@@ -150,4 +134,12 @@ h3, .fs-3, .food-menu-heading, .food-menu-price {
 
 .content-block {
   padding-top: 70px;
+}
+
+#food-bg-3{
+  background-image: url("img/food-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0px;
 }
