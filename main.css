@@ -156,3 +156,11 @@ h3, .fs-3, .food-menu-heading, .food-menu-price {
   background-color: #a37a00;
   color: white;
 }
+
+footer{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.decor-small{
+  max-width: 192px;
+}
