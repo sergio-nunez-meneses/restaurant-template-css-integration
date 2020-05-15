@@ -43,11 +43,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.img-contain {
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-}
 
 .pasta {
   max-width: 67px;
@@ -164,3 +159,4 @@ footer{
 .decor-small{
   max-width: 192px;
 }
+
