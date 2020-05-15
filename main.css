@@ -31,7 +31,6 @@ nav {
   color: white;
 }
 
-
 #food-bg-2 {
   background-image: url("img/ingredients-bg.jpg");
   background-repeat: no-repeat;
@@ -136,10 +135,24 @@ h3, .fs-3, .food-menu-heading, .food-menu-price {
   padding-top: 70px;
 }
 
-#food-bg-3{
+#food-bg-3 {
   background-image: url("img/food-bg-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 0px;
+}
+
+.rounded-btn{
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+}
+
+#btn-gold{
+  background-color: #c90;
+}
+#btn-gold:hover{
+  background-color: #a37a00;
+  color: white;
 }
