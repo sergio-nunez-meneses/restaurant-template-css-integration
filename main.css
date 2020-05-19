@@ -53,7 +53,6 @@ nav {
 }
 
 #menu {
-   width: 1100px;
    margin: auto;
    text-align: center;
    display: flex;
@@ -120,6 +119,12 @@ nav {
   color: white;
 }
 
+#map {
+  width: 1100px;
+  height: 450px;
+   margin: 0 auto 1px;
+}
+
 footer{
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -127,4 +132,3 @@ footer{
 .decor-small{
   max-width: 192px;
 }
- 
