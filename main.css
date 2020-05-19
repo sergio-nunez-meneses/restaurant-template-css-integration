@@ -43,7 +43,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .pasta {
   max-width: 67px;
 }
@@ -52,6 +51,7 @@ nav {
    width: 100%;
    background-size: cover;
 }
+
 #menu {
    width: 1100px;
    margin: auto;
@@ -61,27 +61,33 @@ nav {
    flex-wrap: wrap;
    padding: 30px 50px 50px 50px;
 }
+
 #menu h2 {
    color: #dab33e;
 }
+
 #menu section {
    width: 42%;
 }
+
 #menu img {
    margin-bottom: 35px;
 }
+
 .ligne-prix {
    display: flex;
    justify-content: space-between;
    border-bottom: 1px solid #dab33e;
    padding-bottom: 7px;
 }
+
 .plat, .prix {
    font-family: Georgia, serif;
    font-weight: 400;
    color: #dab33e;
    text-align: justify;
 }
+
 #menu p {
    text-align: left;
    margin-top: 15px;
@@ -121,4 +127,3 @@ footer{
 .decor-small{
   max-width: 192px;
 }
-
