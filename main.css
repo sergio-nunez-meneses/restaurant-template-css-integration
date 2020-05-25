@@ -1,3 +1,4 @@
+/*
 body {
   font-family: Georgia, serif;
 }
@@ -131,4 +132,238 @@ footer{
 
 .decor-small{
   max-width: 192px;
+}
+*/
+
+/* GENERAL SETTINGS */
+body {
+	font-family: Georgia, serif;
+  font-size: calc(1em + 0.5vw); /* 16px + 6.38px */
+	font-weight: 400;
+	text-rendering: optimizeLegibility !important;
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+/* HEADER SECTION */
+header {
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url("./img/food-bg-1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#headerNavbar .flex-container {
+	display: flex;
+	flex-flow: row nowrap; /* direction wrap */
+	align-content: flex-start;
+	justify-content: space-around;
+}
+#headerNavbar .logo {
+	flex: 1 1 auto; /* grow shrink basis*/
+}
+#headerNavbar img {
+	width: calc(7.5em + 1.5vw); /* 120px */
+	height: calc(5em + 1.5vw); /* 80px */
+	padding: 0.5rem 0 0 2rem; /* 8px 32px */
+}
+#headerNavbar button {
+	display: none;
+}
+#headerNavbar ul {
+	margin:	auto;
+	padding: 0.5rem 2rem 0 0; /* 8px 32px */
+	display: inline-flex;
+	flex: 1 1 auto; /* grow shrink basis*/
+	justify-content: flex-end; /* right */
+	list-style-type: none;
+	text-decoration: none;
+}
+#headerNavbar li .active {
+	color: #fff;
+}
+#headerNavbar li > a {
+	padding: 0 0.5rem; /* 8px */
+	font-size: calc(0.625em + 0.5vw); /* 10px */
+	font-weight: bold;
+	color: #ddd;
+	text-decoration: none;
+}
+#headerNavbar li > a:hover {
+	color: #fff;
+	transition: all 0.3s;
+}
+#headerTitle h1 {
+	margin-top: 6rem; /* 96px */
+  font-size: calc(3.5em + 1.5vw); /* 48px */
+  font-weight: normal;
+  color: #ddd;
+	text-align: center;
+}
+#headerTitle .flex-column {
+	display: flex;
+	flex-flow: column nowrap; /* direction wrap */
+	align-content: center;
+	justify-content: center;
+}
+#headerTitle img {
+	width: calc(10.5em + 1.5vw); /* 168px */
+	height: calc(1.75em + 1.5vw); /* 28px */
+	margin: -1rem auto;
+}
+#headerTitle .flex-row {
+	display: flex;
+	flex-flow: row nowrap; /* direction wrap */
+	align-content: center;
+	justify-content: center;
+}
+#headerTitle button {
+	margin: 2rem 1rem;
+	padding: 1rem;
+	background-color: transparent;
+	color: #ddd;
+}
+
+/* ABOUT SECTION */
+#aboutSection {
+  height: auto;
+  min-height: 100vh;
+  background-color: #fff;
+}
+#aboutSection h1 {
+  font-size: calc(1em + 1.5vw); /* 2.5rem */
+  color: #c90;
+}
+#aboutSection p {
+	font-size: calc(0.5em + 0.5vw);
+  color: #6c757d;
+}
+
+/* INGREDIENTS SECTION */
+#ingredientsSection {
+  height: auto;
+  min-height: 100vh;
+  background-image: url("./img/ingredients-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	text-align: center;
+}
+#ingredientsSection h1, p {
+  color: #fff;
+}
+#ingredientsSection h1 {
+  font-size: calc(2em + 1.5vw);
+}
+
+/* MENU SECTION */
+#menuSection {
+	height: auto;
+  min-height: 100vh;
+  background-color: #fff;
+	text-align: center;
+}
+#menuSection h2, span {
+	color: #c90;
+}
+#menuSection p {
+	font-size: calc(0.5em + 0.5vw); /* 5px */
+	color: #000;
+}
+#menuSection .dish, .price {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #dab33e;
+  text-align: justify;
+}
+#menuSection .ligne-prix {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.0625em solid #dab33e;
+  padding-bottom: 7px;
+}
+
+/* REVIEWS SECTION */
+#reviewSection {
+	height: 100vh;
+  min-height: 100vh;
+  background-image: url("./img/food-bg-2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	text-align: center;
+}
+#reviewSection h1 {
+	color: #fff;
+	font-size: calc(2em + 1.5vw);
+}
+#reviewSection p {
+	font-size: calc(0.5em + 0.5vw);
+}
+#reviewSection small {
+	color: #6c757d;
+}
+
+/* RESERVATION SECTION */
+#reservationSection {
+	height: auto;
+  min-height: 100vh;
+	text-align: center;
+}
+#reservationImage {
+	margin: 1rem;
+}
+#reservationSection h1 {
+	color: #c90;
+}
+#reservationSection p {
+	font-size: calc(0.5em + 0.5vw);
+	color: #6c757d;
+}
+#reservationSection label {
+	font-size: calc(0.5em + 0.5vw);
+	color: #6c757d;
+	font-weight: bold;
+}
+
+/* CONTACT SECTION */
+footer {
+	height: auto;
+  min-height: 100vh;
+	background-color: #000;
+	text-align: center;
+}
+#footerSection h5 {
+	color: #fff;
+}
+#footerSection p, span {
+	font-size: calc(0.5em + 0.5vw);
+}
+#footerSection p {
+	color: #6c757d;
+}
+#footerSection span {
+	color: #fff;
+}
+
+#mapSection .map-responsive{
+	height: 0;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+	align-content: center;
+}
+#mapSection .map-responsive iframe {
+  width: 100%;
+	height: 90%;
+  left: 0;
+  top: 0;
+	border: 0;
+  position: absolute;
 }

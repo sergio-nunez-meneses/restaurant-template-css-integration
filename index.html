@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <!-- HEADER -->
+  HEADER
   <header class="min-vh-100">
     <section id="menu">
       <nav class="navbar navbar-expand-lg navbar-dark container p-0">
@@ -63,7 +63,7 @@
     </section>
   </header>
 
-    <!-- ABOUT -->
+  ABOUT
   <main>
     <article id="row-1" class="background-img">
       <section class="min-vh-100 container d-flex flex-column align-content-center">
@@ -83,7 +83,7 @@
     </article>
 
 
-    <!-- INGREDIENTS -->
+    INGREDIENTS
     <article id="food-bg-2">
       <section class="min-vh-100 container d-flex flex-column align-content-center">
         <div class="row flex-grow-1 justify-content-center align-items-center">
@@ -104,7 +104,7 @@
       </section>
     </article>
 
-      <!-- MENU -->
+        MENU
         <section id="menus">
            <section id="menu">
               <section>
@@ -210,7 +210,7 @@
            </section>
         </section>
 
-    <!-- REVIEWS -->
+    REVIEWS
     <article id="food-bg-3">
       <section class="min-vh-100 container d-flex flex-column align-content-center">
         <div class="row flex-grow-1 justify-content-center align-items-center">
@@ -246,7 +246,7 @@
       </section>
     </article>
 
-    <!-- RESERVATIONS -->
+    RESERVATIONS
     <article id="row-5" class="background-img">
       <section class="min-vh-100 container d-flex flex-column align-content-center">
         <div class="row flex-grow-1 justify-content-center align-items-center">
@@ -343,12 +343,12 @@
       </div>
     </section>
 
-    <!-- MAP -->
+        MAP
         <section id="map">
            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d68423.96586318403!2d-74.02256063301074!3d40.71932320318893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s19th+Paradise+Street+Sitia+128+Meserole+Avenue!5e0!3m2!1sfr!2sfr!4v1539098184249" width="1100" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
 
-    <!-- FOOTER -->
+  FOOTER
   </footer>
 
   <script src="https://kit.fontawesome.com/6fee70888d.js"></script>
@@ -356,6 +356,324 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Sylvain Thibault, Sergio Núñez Meneses">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./normalize.css">
+  <!-- Font Awesome Web Application Icons -->
+  <script src="https://use.fontawesome.com/275ae55494.js"></script>
+  <title>Discovering CSS</title>
+</head>
+
+<body id="pageTop">
+
+  <header id="headerSection">
+    <section>
+      <nav id="headerNavbar">
+        <div class="flex-container">
+          <a href="#pageTop" class="logo">
+            <img src="./img/logo-transparent.png" alt="logo-lambda">
+          </a>
+          <button class="" type="button" data-toggle="" data-target="#hamburgerMenu">
+            <span class="fa fa-bars"></span>
+          </button>
+          <ul id="hamburgerMenu" class="">
+            <li class="active">
+              <a class="" href="#headerTitle">Home
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#aboutSection">About
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#menuSection">Menu
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#reviewSection">Reviews
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#reservationSection">Reservations
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#contactSection">Contact
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="">
+              <a class="" href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section id="headerTitle">
+      <div class="flex-column">
+        <h1>the right ingredients<br>for the right food</h1>
+        <img class="" src="./img/decor-1-big-white.png" alt="decor-1">
+      </div>
+      <div class="flex-row">
+        <button type="button" class="">Book a table</button>
+        <button type="button" class="" id="see-the-menu">See the menu</button>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <article id="aboutSection">
+      <section>
+        <h1>Just the Right Food</h1>
+        <img class="" src="img/decor-2-big-gold.png" alt="decor-2-gold">
+        <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop
+          in
+          today and check us out!</p>
+        <img class="" src="img/chef.png" alt="chef">
+      </section>
+    </article>
+
+    <!-- INGREDIENTS SECTION -->
+    <article id="ingredientsSection">
+      <section>
+        <h1 class="">Fine ingredients</h1>
+        <img class="" src="img/decor-2-big-white.png" alt="decor-2-white">
+        <p class="">
+          If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more.
+          <br>
+          Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees makes us hard to resist!
+          <br>
+          Stop in today and check us out!</p>
+      </section>
+    </article>
+
+    <!-- MENU SECTION -->
+    <article id="menuSection">
+      <section id="appetisers">
+        <h2>Appetisers</h2>
+        <img src="img/div-yellow.png" alt="">
+        <!-- appetiser 1 -->
+        <div class="ligne-price">
+          <span class="dish">Tzatski</span>
+          <span class="price">$3.99</span>
+        </div>
+        <p>Refreshing traditional cucumber and garlic in yoghurt dip.</p>
+        <!-- appetiser 2 -->
+        <div class="ligne-price">
+          <span class="dish">Aubergine Salad</span>
+          <span class="price">$5.50</span>
+        </div>
+        <p> Pureed eggplant garlic, green pepper and tomato dip.</p>
+        <!-- appetiser 3 -->
+        <div class="ligne-price">
+          <span class="dish">Aubergine Salad</span>
+          <span class="price">$5.25</span>
+        </div>
+        <p>Pureed eggplant garlic, green pepper and tomato dip.</p>
+      </section>
+      <section id="salads">
+        <h2>Salads</h2>
+        <img src="img/div-yellow.png" alt="">
+        <article>
+          <!-- salad 1 -->
+          <div class="ligne-price">
+            <span class="dish">Olive Special</span>
+            <span class="price">$5.99</span>
+          </div>
+          <p>Refreshing traditional cucumber and garlic in yoghurt dip.</p>
+          <!-- salad 2 -->
+          <div class="ligne-price">
+            <span class="dish">Greek Salad</span>
+            <span class="price">$5.50</span>
+          </div>
+          <p>Pureed eggplant garlic, green pepper and tomato dip.</p>
+          <!-- salad 3 -->
+          <div class="ligne-price">
+            <span class="dish">Gusto Salad</span>
+            <span class="price">$5.25</span>
+          </div>
+          <p>Pureed eggplant garlic, green pepper and tomato dip.</p>
+      </section>
+      <section id="starters">
+        <h2>Starters</h2>
+        <img src="img/div-yellow.png" alt="">
+        <!-- starter 1 -->
+        <div class="ligne-price">
+          <span class="dish">Haloumi</span>
+          <span class="price">$3.99</span>
+        </div>
+        <p>Refreshing traditional cucumber and garlic in yoghurt dip.</p>
+        <!-- starter 2 -->
+        <div class="ligne-price">
+          <span class="dish">Spinach Pie</span>
+          <span class="price">$5.50</span>
+        </div>
+        <p>Pureed eggplant garlic, green pepper and tomato dip.</p>
+        <!-- starter 3 -->
+        <div class="ligne-price">
+          <span class="dish">Cornish Mackerel</span>
+          <span class="price">$5.99</span>
+        </div>
+        <p>Refreshing traditional cucumber and garlic in yoghurt dip.</p>
+      </section>
+      <section id="mains">
+        <h2>Main Dishes</h2>
+        <img src="img/div-yellow.png" alt="">
+        <!-- main 1 -->
+        <div class="ligne-price">
+          <span class="dish">Roast Lamb</span>
+          <span class="price">$5.50</span>
+        </div>
+        <p>Refreshing traditional cucumber and garlic in yoghurt dip.</p>
+        <!-- main 2 -->
+        <div class="ligne-price">
+          <span class="dish">Fried Chicken</span>
+          <span class="price">$5.25</span>
+        </div>
+        <p>Refreshing traditional cucumber and garlic in yoghurt dip.</p>
+        <!-- main 3 -->
+        <div class="ligne-price">
+          <span class="dish">Pastitsio</span>
+          <span class="price">$5.99</span>
+        </div>
+        <p>Refreshing traditional cucumber and garlic in yoghurt dip.</p>
+      </section>
+    </article>
+
+    <!-- REVIEWS SECTION -->
+    <article id="reviewSection">
+      <section>
+        <h1 class="">Guest Reviews</h1>
+        <img class="" src="img/decor-2-big-white.png" alt="decor-2-white">
+        <div id="carousel" class="">
+          <div id="carouselItem" class="">
+            <p class="">If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees makes us hard
+              to resist! Stop in today and check us out!</p>
+            <p class=""><small>&mdash; food inc, New York &mdash;</small></p>
+          </div>
+          <div id="carouselItem" class="">
+            <p class="">A charmingly original restaurant in a neighborhood starved for good fare. Greek cuisine with drop-dead delicious ingredients making every entree an experience.</p>
+            <p class="text-secondary mt-2 mb-5"><small>&mdash; Farm House &mdash;</small></p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- RESERVATION SECTION -->
+    <article id="reservationSection">
+      <section>
+        <div id="reservationImage" class="">
+          <img class="" src="./img/food-left.jpg" alt="food-left">
+          <img class="" src="./img/food-right.jpg" alt="food-right">
+        </div>
+        <div class="">
+          <h1 class="">Book your table</h1>
+          <img class="" src="./img/decor-2-big-gold.png" alt="decor-2-gold">
+          <p class="">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
+            coffees make us hard to resist! Stop in today and check us out!</p>
+          <form class="">
+            <label class="" for="inputEmail4">Your email</label>
+            <input type="email" class="" id="inputEmail4" placeholder="Your email*">
+            <label class="" for="inputPassword4">Your Name</label>
+            <input type="Name" class="" id="inputPassword4" placeholder="name*">
+            <label class="" for="input5">What time?</label>
+            <select id="input5" class="">
+              <option selected>18:00</option>
+              <option>18:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+              <option>21:30</option>
+            </select>
+            <label class="" for="input4">Party Size</label>
+            <select id="input4" class="">
+              <option selected>Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+            </select>
+            <button type="submit" id="btn-gold" class="">Book now</button>
+          </form>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- CONTACT SECTION -->
+  <footer id="contactSection">
+    <section>
+      <div class="">
+        <h5 class="">About Us</h5>
+        <img class="" src="img/decor-2-big-white.png" alt="decor-2-white">
+        <p class="">Lambda's new and expanded Chelsea location represents a truly <span class="">authentic</span> Greek patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.</p>
+      </div>
+      <div class="">
+        <h5 class="">Opening Hours</h5>
+        <img class="" src="img/decor-2-big-white.png" alt="decor-2-white">
+        <p class=""><span class="text-white">Mon-Thu:</span> 7:00am-8:00pm<br><span class="text-white">Fri-Sun:</span> 7:00am-10:00pm</p>
+        <p class="">
+          <i class="fa fa-cc-amex"></i>
+          <i class="fa fa-paypal"></i>
+          <i class="fa fa-university"></i>
+          <i class="fa fa-cc-mastercard"></i>
+          <i class="fa fa-google-wallet"></i>
+          <i class="fa fa-credit-card"></i>
+        </p>
+      </div>
+      <div class="">
+        <h5 class="">Location</h5>
+        <img class="" src="img/decor-2-big-white.png" alt="decor-2-white">
+        <p class="">19th Paradise Street Sitia<br>128 Meserole Avenue </p>
+        <p class="">
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-linkedin"></i>
+        </p>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section id="mapSection">
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d68423.96586318403!2d-74.02256063301074!3d40.71932320318893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s19th+Paradise+Street+Sitia+128+Meserole+Avenue!5e0!3m2!1sfr!2sfr!4v1539098184249"
+          frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </footer>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
