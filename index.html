@@ -377,6 +377,7 @@
 <body id="pageTop">
 
   <header id="headerSection">
+
     <section>
       <nav id="headerNavbar">
         <div class="flex-container">
@@ -387,8 +388,8 @@
             <span class="fa fa-bars"></span>
           </button>
           <ul id="hamburgerMenu" class="">
-            <li class="active">
-              <a class="" href="#headerTitle">Home
+            <li class="">
+              <a class="active" href="#headerSection">Home
               </a>
             </li>
             <li class="">
@@ -428,6 +429,11 @@
             </li>
           </ul>
         </div>
+      <!--
+        <button class="" type="button" data-toggle="" data-target="#hamburgerButton">
+        </button>
+      -->
+
       </nav>
     </section>
 
@@ -437,13 +443,28 @@
         <img class="" src="./img/decor-1-big-white.png" alt="decor-1">
       </div>
       <div class="flex-row">
-        <button type="button" class="">Book a table</button>
-        <button type="button" class="" id="see-the-menu">See the menu</button>
+        <a href="#reservationSection">
+          <button type="button" class="">Book a table</button>
+        </a>
+        <a href="#menuSection"><button type="button" class="" id="see-the-menu">See the menu</button>
+        </a>
       </div>
     </section>
   </header>
 
   <main>
+
+    <!-- TEST -->
+    <article id="test">
+      <section>
+        <ul class="flex-container wrap">
+          <li class="flex-item item-left">logo</li>
+          <li class="flex-item item-center">2</li>
+          <li class="flex-item item-right">3</li>
+        </ul>
+      </section>
+    </article>
+
     <!-- ABOUT SECTION -->
     <article id="aboutSection">
       <section>
@@ -453,6 +474,7 @@
           in
           today and check us out!</p>
         <img class="" src="img/chef.png" alt="chef">
+        <img class="" src="./img/sample-plate.png" alt="sample-plate">
       </section>
     </article>
 
@@ -673,7 +695,7 @@
     </section>
   </footer>
 
-  <script type="text/javascript" src="./script.js"></script>
+  <!-- <script type="text/javascript" src="./script.js"></script> -->
 </body>
 
 </html>

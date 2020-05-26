@@ -133,7 +133,6 @@ footer{
 .decor-small{
   max-width: 192px;
 }
-*/
 
 /* GENERAL SETTINGS */
 body {
@@ -144,6 +143,62 @@ body {
 	position: relative;
 	scroll-behavior: smooth;
 }
+
+/* TEST */
+#test .flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 3px solid silver;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#test .flex-item {
+	width: 100px;
+  height: 100px;
+  padding: 5px;
+  line-height: 100px;
+	background: gold;
+	font-size: 2em;
+	font-weight: bold;
+  color: white;
+  text-align: center;
+}
+#test .item-left {
+	margin: 0.125rem;
+	flex-grow: 0.1;
+	align-self: flex-start;
+}
+#test .item-center {
+	margin: auto 0.125rem auto auto;
+	flex-grow: 0.5;
+}
+#test .item-right {
+	margin: 0.125rem 0.125rem 0.125rem auto;
+	flex-grow: 0.5;
+	align-self: flex-end;
+}
+/* medium screens */
+@media all and (max-width: 800px) {
+  #test .flex-container {
+    justify-content: space-around;
+  }
+}
+/* small screens */
+@media all and (max-width: 500px) {
+  #test .flex-container {
+    flex-direction: column;
+  }
+	#test .item-left, #test .item-center, #test .item-right {
+		width: 97%;
+		margin: 0.0625rem;
+		align-content: stretch;
+		align-self: center;
+	}
+}
+/* TEST */
+
 
 /* HEADER SECTION */
 header {
@@ -181,7 +236,7 @@ header {
 	list-style-type: none;
 	text-decoration: none;
 }
-#headerNavbar li .active {
+#headerNavbar ul > li .active {
 	color: #fff;
 }
 #headerNavbar li > a {
@@ -219,11 +274,27 @@ header {
 	align-content: center;
 	justify-content: center;
 }
+#headerTitle a {
+	margin: 2rem 1rem; /* 32px 16px */
+	padding: 0.75rem; /* 12px */
+}
 #headerTitle button {
-	margin: 2rem 1rem;
-	padding: 1rem;
+	padding: 0.75rem; /* 12px */
 	background-color: transparent;
+	border: 0.0625em solid #ddd;
+	font-size: calc(0.625em + 0.5vw); /* 48px */
 	color: #ddd;
+	text-transform: uppercase;
+}
+#headerTitle button {
+	cursor: pointer;
+}
+#headerTitle #see-the-menu {
+	border: none;
+}
+#headerTitle #see-the-menu:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s;
 }
 
 /* ABOUT SECTION */
@@ -234,6 +305,7 @@ header {
 }
 #aboutSection h1 {
   font-size: calc(1em + 1.5vw); /* 2.5rem */
+	font-weight: lighter;
   color: #c90;
 }
 #aboutSection p {
