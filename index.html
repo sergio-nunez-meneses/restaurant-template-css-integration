@@ -1,4 +1,5 @@
-<!-- <!DOCTYPE html>
+<!--
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -358,7 +359,8 @@
   <script src="script.js"></script>
 </body>
 
-</html> -->
+</html>
+-->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -381,100 +383,95 @@
     <section>
       <nav id="headerNavbar">
         <div class="flex-container">
-          <a href="#pageTop" class="logo">
-            <img src="./img/logo-transparent.png" alt="logo-lambda">
-          </a>
+          <div class="logo-left">
+            <a href="#pageTop" class="">
+              <img src="./img/logo-transparent.png" alt="logo-lambda">
+            </a>
+          </div>
           <button class="" type="button" data-toggle="" data-target="#hamburgerMenu">
             <span class="fa fa-bars"></span>
           </button>
-          <ul id="hamburgerMenu" class="">
-            <li class="">
-              <a class="active" href="#headerSection">Home
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#aboutSection">About
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#menuSection">Menu
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#reviewSection">Reviews
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#reservationSection">Reservations
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#contactSection">Contact
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#">
-                <i class="fa fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="#">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
+          <div class="menu-right">
+            <ul id="hamburgerMenu" class="">
+              <li class="">
+                <a class="active" href="#headerSection">Home
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#aboutSection">About
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#menuSection">Menu
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#reviewSection">Reviews
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#reservationSection">Reservations
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#contactSection">Contact
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="">
+                <a class="" href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      <!--
-        <button class="" type="button" data-toggle="" data-target="#hamburgerButton">
-        </button>
-      -->
-
       </nav>
     </section>
 
     <section id="headerTitle">
-      <div class="flex-column">
-        <h1>the right ingredients<br>for the right food</h1>
-        <img class="" src="./img/decor-1-big-white.png" alt="decor-1">
-      </div>
-      <div class="flex-row">
-        <a href="#reservationSection">
-          <button type="button" class="">Book a table</button>
-        </a>
-        <a href="#menuSection"><button type="button" class="" id="see-the-menu">See the menu</button>
-        </a>
+      <div class="flex-container">
+        <div class="">
+          <h1>the right ingredients<br>for the right food</h1>
+          <img class="" src="./img/decor-1-big-white.png" alt="decor-1">
+        </div>
+        <div class="center-buttons">
+          <a href="#reservationSection">
+            <button type="button" class="">Book a table</button>
+          </a>
+          <a href="#menuSection">
+            <button type="button" class="" id="see-the-menu">See the menu</button>
+          </a>
+        </div>
       </div>
     </section>
   </header>
 
   <main>
 
-    <!-- TEST -->
-    <article id="test">
-      <section>
-        <ul class="flex-container wrap">
-          <li class="flex-item item-left">logo</li>
-          <li class="flex-item item-center">2</li>
-          <li class="flex-item item-right">3</li>
-        </ul>
-      </section>
-    </article>
-
     <!-- ABOUT SECTION -->
     <article id="aboutSection">
       <section>
-        <h1>Just the Right Food</h1>
-        <img class="" src="img/decor-2-big-gold.png" alt="decor-2-gold">
-        <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop
-          in
-          today and check us out!</p>
-        <img class="" src="img/chef.png" alt="chef">
-        <img class="" src="./img/sample-plate.png" alt="sample-plate">
+        <div class="flex-container">
+          <div class="left-side">
+            <h1>Just the Right Food</h1>
+            <img class="" src="img/decor-2-big-gold.png" alt="decor-2-gold">
+            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist!Stop in today and check us out!</p>
+            <img class="" src="img/chef.png" alt="chef">
+          </div>
+          <div class="right-side">
+            <img class="dish-image" src="./img/sample-plate.png" alt="sample-plate">
+          </div>
+        </div>
       </section>
     </article>
 
