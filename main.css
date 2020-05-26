@@ -210,10 +210,9 @@ header {
 	#headerNavbar .logo-left {
 		display: flex;
 		justify-content: center;
-
 	}
-	#headerTitle img {
-		margin: 0;
+	#headerNavbar img {
+		padding: 0;
 	}
 	#headerNavbar .menu-right {
 		display: flex;
@@ -252,7 +251,7 @@ header {
 	padding: 0.75rem; /* 12px */
 	background-color: transparent;
 	border: 0.0625em solid #ddd;
-	font-size: calc(0.625em + 0.5vw); /* 48px */
+	font-size: calc(0.625em + 0.5vw); /* 10px */
 	color: #ddd;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -285,9 +284,10 @@ header {
 	justify-content: space-between;
 }
 #aboutSection .left-side {
-	width: 50%;
+	/* width: 50%; */
 	display: flex;
 	flex-flow: column wrap;
+	flex: 0 0 50%;
 	align-content: center;
 	align-items: center;
 }
@@ -308,6 +308,7 @@ header {
 	width: 80%;
 	height: auto%;
 }
+/* sm screens */
 @media (max-width: 768px) {
 	#aboutSection .flex-container {
 		display: flex;
@@ -316,7 +317,6 @@ header {
 }
 /* INGREDIENTS SECTION */
 #ingredientsSection {
-  height: auto;
   min-height: 100vh;
   background-image: url("./img/ingredients-bg.jpg");
   background-position: top center;
@@ -325,11 +325,52 @@ header {
   background-size: cover;
 	text-align: center;
 }
+#ingredientsSection .flex-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+#ingredientsSection .empty-left {
+	max-width: 50%;
+	flex: 0 0 50%; /* grow shrink basis */
+}
+#ingredientsSection .masking {
+	max-width: 50%;
+	margin-top: 8rem;
+	margin-right: 7rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-flow: row wrap;
+	flex: 0 0 40%;
+	justify-content: center;
+	align-content: center;
+}
+#ingredientsSection .text-right {
+	max-width: 50%;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+	align-items: flex-start;
+}
+#ingredientsSection .pastas {
+	max-width: 4rem;
+}
 #ingredientsSection h1, p {
   color: #fff;
 }
 #ingredientsSection h1 {
-  font-size: calc(2em + 1.5vw);
+  font-size: calc(1em + 1.5vw);
+	font-weight: lighter;
+	white-space: nowrap;
+}
+#ingredientsSection p {
+  font-size: calc(0.5em + 0.5vw);
+	text-align: match-parent;
+}
+/* md screens */
+@media (max-width: 992px) {
+
 }
 
 /* MENU SECTION */
