@@ -217,7 +217,6 @@ header {
 	#headerNavbar .menu-right {
 		display: flex;
 		flex-flow: column nowrap;
-		align-content: center;
 	}
 	#headerNavbar ul {
 		margin: 0;
@@ -284,7 +283,6 @@ header {
 	justify-content: space-between;
 }
 #aboutSection .left-side {
-	/* width: 50%; */
 	display: flex;
 	flex-flow: column wrap;
 	flex: 0 0 50%;
@@ -353,7 +351,6 @@ header {
 	max-width: 70%;
 	display: flex;
 	flex-flow: column wrap;
-	/* align-content: center; */
 }
 #ingredientsSection .pastas-bottom {
 	margin-left: 3rem;
@@ -380,8 +377,7 @@ header {
 }
 #ingredientsSection p {
 	padding-bottom: 2rem;
-  font-size: calc(0.4375em + 0.5vw);
-	/* text-align: match-parent; */
+  font-size: calc(0.5em + 0.5vw);
 }
 /* lg screens */
 @media (max-width: 992px) {
@@ -397,7 +393,7 @@ header {
 		margin: 0;
 	}
 	#ingredientsSection p {
-	  font-size: calc(0.5em + 0.5vw);
+	  font-size: calc(0.625em + 0.5vw);
 	}
 }
 /* md screens */
@@ -405,22 +401,39 @@ header {
 	#ingredientsSection .pastas-bottom {
 		margin-left: 1rem;
 		margin-right: 1rem;
-		justify-content: space-around;
 	}
 }
 /* MENU SECTION */
 #menuSection {
-	height: auto;
   min-height: 100vh;
   background-color: #fff;
 	text-align: center;
 }
+#menuSection .flex-container {
+	padding-top: 2rem; /* 32px */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+#menuSection .flex-menu {
+	display: flex;
+	flex-flow: column wrap;
+}
+#menuSection img {
+	padding-bottom: 2rem;
+}
 #menuSection h2, span {
 	color: #c90;
+}
+#menuSection h2 {
+	font-size: calc(1em + 0.5vw);
+	font-weight: lighter;
 }
 #menuSection p {
 	font-size: calc(0.5em + 0.5vw); /* 5px */
 	color: #000;
+	text-align: left;
 }
 #menuSection .dish, .price {
   font-family: Georgia, serif;
@@ -428,16 +441,21 @@ header {
   color: #dab33e;
   text-align: justify;
 }
-#menuSection .ligne-prix {
+#menuSection .price-line {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.0625em solid #dab33e;
-  padding-bottom: 7px;
+  padding-bottom: 0.4735rem;
 }
-
+/* lg screens */
+@media (max-width: 768px) {
+	#menuSection .flex-container {
+		display: flex;
+		flex-flow: column wrap;
+	}
+}
 /* REVIEWS SECTION */
 #reviewSection {
-	height: 100vh;
   min-height: 100vh;
   background-image: url("./img/food-bg-2.jpg");
   background-position: top center;
@@ -445,6 +463,11 @@ header {
   background-attachment: fixed;
   background-size: cover;
 	text-align: center;
+}
+#reviewSection .flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #reviewSection h1 {
 	color: #fff;
