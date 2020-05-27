@@ -484,7 +484,7 @@ header {
 }
 #reviewSection .indicators {
 	font-size: calc(0.25em + 0.5vw);
-	color: #ddd;
+	color: #fff;
 }
 #reviewSection .indicators > .active {
 }
@@ -537,20 +537,72 @@ header {
   min-height: 100vh;
 	text-align: center;
 }
-#reservationImage {
-	margin: 1rem;
+#reservationSection .flex-container {
+	padding-top: 6rem;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+#reservationSection .meal-left {
+	padding: 1rem;
+	display: flex;
+	flex-flow: row;
+	flex: 0 0 50%;
+}
+#reservationSection .reservation-right {
+	display: flex;
+	flex-flow: column wrap;
+	flex: 0 0 45%;
+	align-items: center;
+}
+#reservationSection .flex-input {
+	display: flex;
+	flex-flow: row nowrap;
+}
+#reservationSection .flex-select {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+#reservationSection .meal-item {
+	width: 50%;
+	height: auto;
+	padding: 1rem;
+}
+#reservationSection .book-btn {
+	padding: 0.5rem;
+	background-color: #c90;
+	color: #fff;
+}
+#reservationSection .book-btn:hover{
+  background-color: #a37a00;
 }
 #reservationSection h1 {
+	font-size: calc(1em + 1.5vw);
+	font-weight: lighter;
 	color: #c90;
 }
 #reservationSection p {
+	font-size: calc(0.4375em + 0.5vw);
+	color: #6c757d;
+}
+#reservationSection label, #reservationSection input, #reservationSection select {
 	font-size: calc(0.5em + 0.5vw);
 	color: #6c757d;
 }
 #reservationSection label {
-	font-size: calc(0.5em + 0.5vw);
-	color: #6c757d;
 	font-weight: bold;
+}
+@media (max-width: 768px) {
+	#reservationSection .flex-container {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	#reservationSection .meal-left {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		order: 2;
+	}
 }
 
 /* CONTACT SECTION */
