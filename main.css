@@ -135,8 +135,6 @@ footer{
 }
 */
 
-/* @charset "UTF-8"; */
-
 /* GENERAL SETTINGS */
 body {
 	font-family: Georgia, serif;
@@ -146,9 +144,18 @@ body {
 	text-rendering: optimizeLegibility;
 	position: relative;
 }
+h1 {
+	font-size: calc(1em + 1.5vw);
+	font-weight: lighter;
+}
 p {
 	font-size: calc(0.5em + 0.5vw);
 }
+label, input, select {
+	font-size: calc(0.5em + 0.5vw);
+	color: #6c757d;
+}
+
 /* HEADER SECTION */
 header {
   min-height: 100vh;
@@ -160,69 +167,68 @@ header {
   background-size: cover;
 }
 /* header navbar */
-#headerNavbar .flex-container {
+.navbar-container {
 	display: flex;
 	flex-flow: row nowrap; /* direction wrap */
 	justify-content: space-between;
 	align-content: center;
 }
-#headerNavbar .logo-left {
+.logo {
 	display: flex;
 	flex-wrap: wrap;
 }
-#headerNavbar .menu-right {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-}
-#headerNavbar img {
+.logo img {
 	width: calc(7.5em + 1.5vw); /* 120px */
 	height: calc(5em + 1.5vw); /* 80px */
 	padding: 0.5rem 0 0 2rem; /* 8px 32px */
 }
-/* hamburger icon */
-#headerNavbar button {
+.hamburger-icon {
 	display: none;
 }
-#headerNavbar ul {
+.navbar-container .navbar-items {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+.navbar-items ul {
 	margin:	auto;
 	padding: 0.5rem 2rem 0 0; /* 8px 32px */
 	display: inline-flex;
 	list-style-type: none;
 	text-decoration: none;
 }
-#headerNavbar ul > li .active {
+.navbar-items ul > li .active {
 	color: #fff;
 }
-#headerNavbar li > a {
+.navbar-items li > a {
 	padding: 0 0.5rem; /* 8px */
 	font-size: calc(0.625em + 0.5vw); /* 10px */
 	font-weight: bold;
 	color: #ddd;
 	text-decoration: none;
 }
-#headerNavbar li > a:hover {
+.navbar-items li > a:hover {
 	color: #fff;
 	transition: all 0.3s;
 }
-/* between sm and md screens */
+/* between md and lg screens */
 @media (max-width: 868px) {
-	#headerNavbar .flex-container {
+	.navbar-container {
 		display: flex;
 		flex-flow: column nowrap; /* direction wrap */
 	}
-	#headerNavbar .logo-left {
+	.logo {
 		display: flex;
 		justify-content: center;
 	}
-	#headerNavbar img {
+	.logo img {
 		padding: 0;
 	}
-	#headerNavbar .menu-right {
+	.navbar-items {
 		display: flex;
 		flex-flow: column nowrap;
 	}
-	#headerNavbar ul {
+	.navbar-items ul {
 		margin: 0;
 		padding: 0;
 		display: flex;
@@ -231,26 +237,38 @@ header {
 	}
 }
 /* header title */
-#headerTitle .flex-container {
+.header-container {
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: column wrap;
 	justify-content: space-around;
 	text-align: center;
 }
-#headerTitle .center-buttons {
+.header-title {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-flow: column wrap;
 }
-#headerTitle img {
-	width: calc(10.5em + 3vw); /* 168px */
-	height: calc(1.75em + 3vh); /* 28px */
-	margin: -1rem auto;
+.header-buttons {
+	padding-top: 1.3125rem;
+	display: flex;
+	justify-content: center;
 }
-#headerTitle a {
+.header-title img {
+	width: calc(9em + 3vw); /* 160px */
+	height: calc(1.25em + 3vh); /* 20px */
+	margin: -2rem auto;
+}
+.header-container .main-title {
+	margin-top: 5rem; /* 80px */
+  font-size: calc(3.125em + 1.5vw); /* 50px */
+  font-weight: normal;
+  color: #ddd;
+	text-align: center;
+}
+.header-buttons a {
 	margin: 2rem 1rem; /* 32px 16px */
 	padding: 0.75rem; /* 12px */
 }
-#headerTitle button {
+.header-buttons button {
 	padding: 0.75rem; /* 12px */
 	background-color: transparent;
 	border: 0.0625em solid #ddd;
@@ -259,17 +277,10 @@ header {
 	text-transform: uppercase;
 	cursor: pointer;
 }
-#headerTitle h1 {
-	margin-top: 6rem; /* 96px */
-  font-size: calc(3.5em + 1.5vw); /* 48px */
-  font-weight: normal;
-  color: #ddd;
-	text-align: center;
-}
-#headerTitle #see-the-menu {
+.header-buttons .menu-button {
 	border: none;
 }
-#headerTitle #see-the-menu:hover {
+.header-buttons .menu-button:hover {
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.3s;
 }
@@ -281,42 +292,44 @@ header {
   background-color: #fff;
 	text-align: center;
 }
-#aboutSection .flex-container {
+.about-container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-#aboutSection .left-side {
+.about-text {
 	display: flex;
 	flex-flow: column wrap;
 	flex: 0 0 50%;
 	align-content: center;
 	align-items: center;
 }
-#aboutSection .right-side {
+.about-photo {
 	display: flex;
+	flex-flow: row nowrap;
+	flex: 0 0 50%;
 	justify-content: center;
 }
-#aboutSection h1 {
-  font-size: calc(1em + 1.5vw); /* 2.5rem */
+.about-text .about-title {
+  font-size: calc(1em + 1.5vw);
 	font-weight: lighter;
   color: #c90;
 }
-#aboutSection p {
-	/* font-size: calc(0.5em + 0.5vw); */
+.about-text p {
   color: #6c757d;
 }
-#aboutSection .dish-image {
+.about-photo .dish-photo {
 	width: 80%;
 	height: auto;
 }
 /* sm screens */
 @media (max-width: 768px) {
-	#aboutSection .flex-container {
+	.about-container {
 		display: flex;
 		flex-direction: column;
 	}
 }
+
 /* INGREDIENTS SECTION */
 #ingredientSection {
   min-height: 100vh;
@@ -407,13 +420,15 @@ header {
 		margin-right: 1rem;
 	}
 }
+
 /* MENU SECTION */
 #menuSection {
   min-height: 100vh;
+	padding-bottom: 1rem;
   background-color: #fff;
 	text-align: center;
 }
-#menuSection .flex-container {
+.menu-container {
 	padding-top: 2rem; /* 32px */
 	padding-bottom: 2rem;
 	display: flex;
@@ -421,32 +436,30 @@ header {
 	justify-content: space-around;
 	align-content: center;
 }
-#menuSection .flex-menu {
+.menu-item {
 	display: flex;
 	flex-flow: column wrap;
 }
-#menuSection img {
+.menu-item img {
 	padding-bottom: 2rem;
 }
-#menuSection h2, #menuSection span {
+.menu-item .menu-title, .menu-item span {
 	color: #c90;
 }
-#menuSection h2 {
-	font-size: calc(1em + 0.5vw);
+.menu-title {
 	font-weight: lighter;
 }
-#menuSection p {
-	/* font-size: calc(0.5em + 0.5vw); */
+.menu-item p {
 	color: #000;
 	text-align: left;
 }
-#menuSection .dish, .price {
+.dish, .price {
   font-family: Georgia, serif;
   font-weight: 400;
   color: #dab33e;
   text-align: justify;
 }
-#menuSection .price-line {
+.price-line {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.0625em solid #dab33e;
@@ -454,11 +467,12 @@ header {
 }
 /* lg screens */
 @media (max-width: 768px) {
-	#menuSection .flex-container {
+	.menu-container {
 		display: flex;
 		flex-flow: column wrap;
 	}
 }
+
 /* REVIEWS SECTION */
 #reviewSection {
   min-height: 100vh;
@@ -540,79 +554,75 @@ header {
 	min-height: 100vh;
 	text-align: center;
 }
-#container {
+.reservation-container {
 	padding-top: 6rem;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row;
 	align-items: center;
 }
-#reservationSection .meal-left {
+.meals {
 	padding: 0.8125rem 3rem 0 3rem;
 	display: flex;
 	flex-flow: row nowrap;
 	flex: 0 0 45%;
 }
-#reservationSection .reservation-right {
+.meal-item {
+	width: 50%;
+	height: auto;
+	padding: 1rem;
+}
+.reservation-form {
 	display: flex;
 	flex-flow: column wrap;
 	flex: 0 0 45%;
 	align-items: center;
 }
-#reservationSection .flex-input {
+.flex-input {
 	display: flex;
 	flex-flow: row nowrap;
 }
-#reservationSection .flex-select {
+.flex-select {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 }
-#reservationSection .meal-item {
-	width: 50%;
-	height: auto;
-	padding: 1rem;
-}
-#reservationSection .book-btn {
+.book-btn {
 	padding: 0.5rem;
 	background-color: #c90;
 	color: #fff;
 }
-#reservationSection .book-btn:hover{
+.book-btn:hover{
   background-color: #a37a00;
 }
-#reservationSection h1 {
+.reservation-form .reservation-title {
 	font-size: calc(1em + 1.5vw);
 	font-weight: lighter;
 	color: #c90;
 }
-#reservationSection p {
+.reservation-form p {
 	font-size: calc(0.4375em + 0.5vw);
 	color: #6c757d;
 }
-#reservationSection label, #reservationSection input, #reservationSection select {
-	font-size: calc(0.5em + 0.5vw);
-	color: #6c757d;
-}
-#reservationSection label {
+form > label {
 	font-weight: bold;
 }
+/* md screens */
 @media (max-width: 768px) {
-	#reservationSection #container {
-		display: flex;
-		flex-flow: column;
+	.reservation-container {
+		display: flex !important;
+		flex-flow: column !important;
 	}
-	#reservationSection .meal-left {
+	.meals {
 		padding-left: 3rem;
 		padding-right: 3rem;
 		order: 2;
 	}
-	#reservationSection .reservation-right {
+	.reservation-form {
 		max-width: 70%;
 		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
+		/* flex-flow: column wrap;
+		align-items: center; */
 	}
-
 }
 
 /* CONTACT SECTION */
@@ -645,6 +655,7 @@ footer {
 .contact-item .social-media-icons {
 	color: #fff;
 }
+/* lg screens */
 @media (max-width: 992px) {
 	footer {
 		padding: 1rem;
@@ -655,7 +666,7 @@ footer {
 		transition: padding 0.3s;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 820px) {
 	footer {
 		padding: 2rem;
 		transition: padding 0.3s;
@@ -667,6 +678,7 @@ footer {
 		transition: padding 0.3s;
 	}
 }
+
 /* MAP SECTION */
 .map-responsive{
 	padding-bottom: 56.25%;
