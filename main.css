@@ -614,10 +614,12 @@ footer {
 #contactSection .flex-container {
 	display: flex;
 	flex-flow: row wrap;
+	flex: 1;
 }
 #contactSection .contact-item {
 	display: flex;
 	flex-flow: column nowrap;
+	justify-content: space-around;
 }
 #contactSection h5 {
 	color: #fff;
