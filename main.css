@@ -534,10 +534,10 @@ header {
 
 /* RESERVATION SECTION */
 #reservationSection {
-  min-height: 100vh;
+	min-height: 100vh;
 	text-align: center;
 }
-#reservationSection .flex-container {
+.sergio {
 	padding-top: 6rem;
 	display: flex;
 	flex-flow: row nowrap;
@@ -545,7 +545,7 @@ header {
 }
 #reservationSection .meal-left {
 	padding: 1rem;
-	display: flex;
+	display: flex nowrap;
 	flex-flow: row;
 	flex: 0 0 50%;
 }
@@ -607,21 +607,28 @@ header {
 
 /* CONTACT SECTION */
 footer {
-	height: auto;
   min-height: 100vh;
 	background-color: #000;
 	text-align: center;
 }
-#footerSection h5 {
+#contactSection .flex-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+#contactSection .contact-item {
+	display: flex;
+	flex-flow: column nowrap;
+}
+#contactSection h5 {
 	color: #fff;
 }
-#footerSection p, span {
+#contactSection p, span {
 	font-size: calc(0.5em + 0.5vw);
 }
-#footerSection p {
+#contactSection p {
 	color: #6c757d;
 }
-#footerSection span {
+#contactSection span {
 	color: #fff;
 }
 /* MAP SECTION */
