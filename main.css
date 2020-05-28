@@ -135,17 +135,20 @@ footer{
 }
 */
 
+/* @charset "UTF-8"; */
+
 /* GENERAL SETTINGS */
 body {
 	font-family: Georgia, serif;
   font-size: calc(1em + 0.5vw); /* 16px + 6.38px */
 	font-weight: 400;
 	line-height: 1.5;
-	text-rendering: optimizeLegibility !important;
+	text-rendering: optimizeLegibility;
 	position: relative;
-	scroll-behavior: smooth;
 }
-
+p {
+	font-size: calc(0.5em + 0.5vw);
+}
 /* HEADER SECTION */
 header {
   min-height: 100vh;
@@ -300,12 +303,12 @@ header {
   color: #c90;
 }
 #aboutSection p {
-	font-size: calc(0.5em + 0.5vw);
+	/* font-size: calc(0.5em + 0.5vw); */
   color: #6c757d;
 }
 #aboutSection .dish-image {
 	width: 80%;
-	height: auto%;
+	height: auto;
 }
 /* sm screens */
 @media (max-width: 768px) {
@@ -378,7 +381,7 @@ header {
 }
 #ingredientSection p {
 	padding-bottom: 2rem;
-  font-size: calc(0.5em + 0.5vw);
+  /* font-size: calc(0.5em + 0.5vw); */
 }
 /* lg screens */
 @media (max-width: 992px) {
@@ -433,7 +436,7 @@ header {
 	font-weight: lighter;
 }
 #menuSection p {
-	font-size: calc(0.5em + 0.5vw); /* 5px */
+	/* font-size: calc(0.5em + 0.5vw); */
 	color: #000;
 	text-align: left;
 }
@@ -497,7 +500,7 @@ header {
 	font-weight: lighter;
 }
 #reviewSection p {
-	font-size: calc(0.5em + 0.5vw);
+	/* font-size: calc(0.5em + 0.5vw); */
 }
 #reviewSection small {
 	font-size: calc(0.5625em + 0.5vw); /* 9px */
@@ -537,17 +540,17 @@ header {
 	min-height: 100vh;
 	text-align: center;
 }
-.sergio {
+#container {
 	padding-top: 6rem;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 }
 #reservationSection .meal-left {
-	padding: 1rem;
-	display: flex nowrap;
-	flex-flow: row;
-	flex: 0 0 50%;
+	padding: 0.8125rem 3rem 0 3rem;
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 0 0 45%;
 }
 #reservationSection .reservation-right {
 	display: flex;
@@ -594,56 +597,83 @@ header {
 	font-weight: bold;
 }
 @media (max-width: 768px) {
-	#reservationSection .flex-container {
+	#reservationSection #container {
 		display: flex;
-		flex-flow: column nowrap;
+		flex-flow: column;
 	}
 	#reservationSection .meal-left {
 		padding-left: 3rem;
 		padding-right: 3rem;
 		order: 2;
 	}
+	#reservationSection .reservation-right {
+		max-width: 70%;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+	}
+
 }
 
 /* CONTACT SECTION */
 footer {
   min-height: 100vh;
+	padding: 2rem;
 	background-color: #000;
 	text-align: center;
 }
-#contactSection .flex-container {
+.contact-container {
+	padding: 4rem;
 	display: flex;
-	flex-flow: row wrap;
-	flex: 1;
+	flex-flow: row nowrap;
 }
-#contactSection .contact-item {
+.contact-container .contact-item {
+	max-width: 50%;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-around;
+	flex: 1 1 50%;
 }
-#contactSection h5 {
+.contact-title {
 	color: #fff;
 }
-#contactSection p, span {
-	font-size: calc(0.5em + 0.5vw);
-}
-#contactSection p {
+.contact-item p {
 	color: #6c757d;
 }
-#contactSection span {
+.contact-item span {
 	color: #fff;
 }
-/* MAP SECTION */
-#mapSection .map-responsive{
-	height: 0;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-bottom: 56.25%;
-  overflow: hidden;
-  position: relative;
-	align-content: center;
+.contact-item .social-media-icons {
+	color: #fff;
 }
-#mapSection .map-responsive iframe {
+@media (max-width: 992px) {
+	footer {
+		padding: 1rem;
+		transition: padding 0.3s;
+	}
+	.contact-container {
+		padding: 4rem 0;
+		transition: padding 0.3s;
+	}
+}
+@media (max-width: 768px) {
+	footer {
+		padding: 2rem;
+		transition: padding 0.3s;
+	}
+	.contact-container {
+		padding: 4rem;
+		flex-flow: column wrap;
+		align-items: center;
+		transition: padding 0.3s;
+	}
+}
+/* MAP SECTION */
+.map-responsive{
+	padding-bottom: 56.25%;
+	position: relative;
+  overflow: hidden;
+}
+.map-responsive iframe {
   width: 100%;
 	height: 90%;
   left: 0;
