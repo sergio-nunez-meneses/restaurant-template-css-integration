@@ -577,13 +577,29 @@ header {
 	flex: 0 0 45%;
 	align-items: center;
 }
-.flex-input {
+.reservation-form form {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.reservation-item {
+	display: flex;
+}
+/* not done yet */
+.reservation-email {
+}
+.reservation-name {
+}
+/* */
+.flex-input {
+}
+.flex-form {
+	display: flex;
+	flex-flow: column wrap;
 }
 .flex-select {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
 }
 .book-btn {
@@ -607,10 +623,10 @@ form > label {
 	font-weight: bold;
 }
 /* md screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.reservation-container {
-		display: flex !important;
-		flex-flow: column !important;
+		display: flex;
+		flex-direction: column;
 	}
 	.meals {
 		padding-left: 3rem;

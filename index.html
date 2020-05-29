@@ -638,24 +638,24 @@
           </div>
           <div class="reservation-form">
             <h1 class="reservation-title">Book your table</h1>
-            <img class="" src="./img/decor-2-big-gold.png" alt="decor-2-gold">
+            <img src="./img/decor-2-big-gold.png" alt="decor-2-gold">
             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
               coffees make us hard to resist! Stop in today and check us out!</p>
             <form class="">
-              <div class="flex-row">
-                <div class="flex-form">
-                  <label class="" for="inputEmail4">Your email</label>
-                  <input type="email" class="" id="inputEmail4" placeholder="Your email*">
+              <div class="reservation-item">
+                <div class="reservation-mail">
+                  <label for="inputEmail4">Your email</label>
+                  <input type="email" id="inputEmail4" placeholder="Your email*">
                 </div>
-                <div class="flex-input">
-                  <label class="" for="inputPassword4">Your Name</label>
-                  <input type="Name" class="" id="inputPassword4" placeholder="name*">
+                <div class="reservation-name">
+                  <label for="inputPassword4">Your Name</label>
+                  <input type="Name" id="inputPassword4" placeholder="name*">
                 </div>
               </div>
               <div class="flex-select">
                 <div class="flex-form">
-                  <label class="" for="input5">What time?</label>
-                  <select id="input5" class="">
+                  <label for="input5">What time?</label>
+                  <select id="input5">
                     <option selected>18:00</option>
                     <option>18:30</option>
                     <option>19:00</option>
@@ -667,8 +667,8 @@
                   </select>
                 </div>
                 <div class="flex-form">
-                  <label class="" for="input4">Party Size</label>
-                  <select id="input4" class="">
+                  <label for="input4">Party Size</label>
+                  <select id="input4">
                     <option selected>Choose...</option>
                     <option>1</option>
                     <option>2</option>
@@ -681,8 +681,9 @@
                   </select>
                 </div>
               </div>
-              <button type="submit" class="book-btn">Book now</button>
             </form>
+            <!-- moved out form tag -->
+            <button type="submit" class="book-btn">Book now</button>
           </div>
         </div>
       </section>
