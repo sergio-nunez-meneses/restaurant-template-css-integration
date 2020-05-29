@@ -151,8 +151,20 @@ h1 {
 p {
 	font-size: calc(0.5em + 0.5vw);
 }
-label, input, select {
+input, select {
 	font-size: calc(0.5em + 0.5vw);
+	color: #495057;
+	height: calc(1.5em + .75rem + 2px);
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	display: block;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+label {
+	font-size: calc(0.5em + 0.5vw);
+	font-weight: bold;
 	color: #6c757d;
 }
 
@@ -483,14 +495,14 @@ header {
   background-size: cover;
 	text-align: center;
 }
-#reviewSection .flex-container {
+.review-container {
 	padding-top: 8rem; /* 128px */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 }
-#reviewSection .flex-carousel {
+.review-carousel {
 	max-width: 40%;
 	padding-bottom: 2rem;
 	background-color: rgba(0,0,0,0.8);
@@ -499,51 +511,47 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-#reviewSection .indicators {
+.indicators {
 	font-size: calc(0.25em + 0.5vw);
 	color: #fff;
 }
-#reviewSection .indicators > .active {
-}
-#reviewSection img {
+/* .indicators > .active {
+} */
+.review-carousel img {
 	padding-bottom: 1rem;
 }
-#reviewSection h1 {
+.review-carousel .review-title {
 	color: #fff;
 	font-size: calc(1.25em + 1.5vw); /* 22px */
-	font-weight: lighter;
 }
-#reviewSection p {
-	/* font-size: calc(0.5em + 0.5vw); */
-}
-#reviewSection small {
+.review-carousel small {
 	font-size: calc(0.5625em + 0.5vw); /* 9px */
 	color: #6c757d;
 }
 /* lg screens */
 @media (max-width: 992px) {
-	#reviewSection .flex-carousel {
+	.review-carousel {
 		max-width: 40%;
 		transition: all 0.1s;
 	}
 }
 /* md screens */
 @media (max-width: 768px) {
-	#reviewSection .flex-carousel {
+	.review-carousel {
 		max-width: 50%;
 		transition: all 0.1s;
 	}
 }
 /* sm screens */
 @media (max-width: 576px) {
-	#reviewSection .flex-carousel {
+	.review-carousel {
 		max-width: 60%;
 		transition: all 0.1s;
 	}
 }
 /* xs screens */
 @media (max-width: 420px) {
-	#reviewSection .flex-carousel {
+	.review-carousel {
 		max-width: 80%;
 		transition: all 0.1s;
 	}
@@ -552,24 +560,23 @@ header {
 /* RESERVATION SECTION */
 #reservationSection {
 	min-height: 100vh;
-	text-align: center;
 }
-.reservation-container {
+#reservation-container {
 	padding-top: 6rem;
 	display: flex;
-	flex-flow: row;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
 }
 .meals {
-	padding: 0.8125rem 3rem 0 3rem;
 	display: flex;
-	flex-flow: row nowrap;
-	flex: 0 0 45%;
 }
 .meal-item {
-	width: 50%;
+	max-width: 100%;
 	height: auto;
-	padding: 1rem;
+	margin: 0.125rem;
+	padding: 0.25rem;
+	border-radius: 1.25rem;
 }
 .reservation-form {
 	display: flex;
@@ -577,35 +584,33 @@ header {
 	flex: 0 0 45%;
 	align-items: center;
 }
+.reservation-text {
+	text-align: center;
+}
 .reservation-form form {
+	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
-.reservation-item {
+.reservation-costumer {
+	width: 100%;
 	display: flex;
-}
-/* not done yet */
-.reservation-email {
-}
-.reservation-name {
-}
-/* */
-.flex-input {
-}
-.flex-form {
-	display: flex;
-	flex-flow: column wrap;
-}
-.flex-select {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-around;
+	text-align: left;
+}
+.costumer-information {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 0 0 45%;
 }
 .book-btn {
-	padding: 0.5rem;
+	margin: 2rem;
+	padding: 1rem;
 	background-color: #c90;
+	border: none;
 	color: #fff;
+	cursor: pointer;
 }
 .book-btn:hover{
   background-color: #a37a00;
@@ -619,25 +624,23 @@ header {
 	font-size: calc(0.4375em + 0.5vw);
 	color: #6c757d;
 }
-form > label {
-	font-weight: bold;
-}
 /* md screens */
-@media screen and (max-width: 768px) {
-	.reservation-container {
+@media (max-width: 768px) {
+	#reservation-container {
 		display: flex;
 		flex-direction: column;
 	}
 	.meals {
-		padding-left: 3rem;
-		padding-right: 3rem;
+		padding: 1rem 0;
 		order: 2;
 	}
 	.reservation-form {
 		max-width: 70%;
 		display: flex;
-		/* flex-flow: column wrap;
-		align-items: center; */
+	}
+	.reservation-costumer {
+		display: flex;
+		flex-flow: column;
 	}
 }
 
@@ -709,3 +712,8 @@ footer {
 	border: 0;
   position: absolute;
 }
+
+/* - je ne coute absolument rien à l'entreprise;
+- la formation est financée par la région bourgogne franche-compte;
+- arrêt 18 décembre pendant les 2 semaines de vacances de noël;
+- reprise 4 javier - 8 janvier 2021 */
