@@ -369,8 +369,8 @@
   <meta charset="utf-8">
   <meta name="author" content="Sylvain Thibault, Sergio Núñez Meneses">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./normalize.css">
-  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
   <!-- Font Awesome Web Application Icons -->
   <script src="https://use.fontawesome.com/275ae55494.js"></script>
   <title>Discovering CSS</title>
@@ -385,7 +385,7 @@
         <div class="navbar-container">
           <div class="logo">
             <a href="#pageTop">
-              <img src="./img/logo-transparent.png" alt="logo-lambda">
+              <img src="img/logo-transparent.png" alt="logo-lambda">
             </a>
           </div>
           <button class="hamburger-icon" type="button" data-toggle="" data-target="#hamburgerMenu">
@@ -444,7 +444,7 @@
           <h1 class="main-title">the right ingredients
             <br>
             for the right food</h1>
-          <img src="./img/decor-1-big-white.png" alt="decor-1">
+          <img class="decoration" src="img/decor-1-big-white.png" alt="decor-1">
         </div>
         <div class="header-buttons">
           <a href="#reservationSection">
@@ -466,13 +466,14 @@
         <div class="about-container">
           <div class="about-text">
             <h1 class="about-title">Just the Right Food</h1>
-            <img class="" src="img/decor-2-big-gold.png" alt="decor-2-gold">
-            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to
-              resist!Stop in today and check us out!</p>
+            <img class="decoration" class="" src="img/decor-2-big-gold.png" alt="decor-2-gold">
+            <div class="aboutParagraph">
+              <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist!Stop in today and check us out!</p>
+            </div>
             <img class="" src="img/chef.png" alt="chef">
           </div>
           <div class="about-photo">
-            <img class="dish-photo" src="./img/sample-plate.png" alt="sample-plate">
+            <img class="dish-photo" src="img/sample-plate.png" alt="sample-plate">
           </div>
         </div>
       </section>
@@ -485,8 +486,10 @@
           <!-- just an empty div -->
           <div class="ingredients-empty"></div>
           <div class="ingredients-text">
-            <h1 class="ingredients-title">Fine ingredients</h1>
-            <img class="decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
+            <div>
+              <h1 class="ingredients-title">Fine ingredients</h1>
+              <img class="decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
+            </div>
             <p>If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more.
             <br>
             Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees makes us hard to resist!
@@ -508,7 +511,7 @@
         <div class="menu-item">
           <section>
             <h2 class="menu-title">Appetisers</h2>
-            <img src="img/div-yellow.png" alt="">
+            <img class="decoration" src="img/div-yellow.png" alt="">
             <!-- appetiser 1 -->
             <div class="price-line">
               <span class="dish">Tzatski</span>
@@ -532,7 +535,7 @@
         <div class="menu-item">
           <section>
             <h2 class="menu-title">Salads</h2>
-            <img src="img/div-yellow.png" alt="">
+            <img class="decoration" src="img/div-yellow.png" alt="">
             <article>
               <!-- salad 1 -->
               <div class="price-line">
@@ -557,7 +560,7 @@
         <div class="menu-item">
           <section>
             <h2 class="menu-title">Starters</h2>
-            <img src="img/div-yellow.png" alt="">
+            <img class="decoration" src="img/div-yellow.png" alt="">
             <!-- starter 1 -->
             <div class="price-line">
               <span class="dish">Haloumi</span>
@@ -581,7 +584,7 @@
         <div class="menu-item">
           <section>
             <h2 class="menu-title">Main Dishes</h2>
-            <img src="img/div-yellow.png" alt="">
+            <img class="decoration" src="img/div-yellow.png" alt="">
             <!-- main 1 -->
             <div class="price-line">
               <span class="dish">Roast Lamb</span>
@@ -611,7 +614,7 @@
         <div class="review-container">
           <div class="review-carousel">
             <h1 class="review-title">Guest Reviews</h1>
-            <img src="img/decor-2-big-white.png" alt="decor-2-white">
+            <img class="decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
             <p>If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees makes us hard to resist! Stop in today and check us out!</p>
             <p><small>&mdash; food inc, New York &mdash;</small></p>
             <div class="indicators">
@@ -630,13 +633,13 @@
       <section>
         <div id="reservation-container">
           <div class="meals">
-            <img class="meal-item" src="./img/food-left.jpg" alt="food-left">
-            <img class="meal-item" src="./img/food-right.jpg" alt="food-right">
+            <img class="meal-item" src="img/food-left.jpg" alt="food-left">
+            <img class="meal-item" src="img/food-right.jpg" alt="food-right">
           </div>
           <div class="reservation-form">
             <div class="reservation-text">
               <h1 class="reservation-title">Book your table</h1>
-              <img src="./img/decor-2-big-gold.png" alt="decor-2-gold">
+              <img class="decoration" src="img/decor-2-big-gold.png" alt="decor-2-gold">
               <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
             </div>
             <form>
@@ -689,18 +692,24 @@
   </main>
 
   <!-- CONTACT SECTION -->
-  <footer>
+  <footer id="contactSection">
     <section>
       <div class="contact-container">
         <div class="contact-item">
           <h5 class="contact-title">About Us</h5>
-          <img class="contact-decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
-          <p class="">Lambda's new and expanded Chelsea location represents a truly <span class="">authentic</span> Greek patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.</p>
+          <div>
+            <img class="decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
+          </div>
+          <div class="contactParagraph">
+            <p>Lambda's new and expanded Chelsea location represents a truly <span>authentic</span> Greek patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.</p>
+          </div>
         </div>
         <div class="contact-item">
           <h5 class="contact-title">Opening Hours</h5>
-          <img class="contact-decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
-          <p class=""><span class="">Mon-Thu:</span> 7:00am-8:00pm<br><span class="">Fri-Sun:</span> 7:00am-10:00pm</p>
+          <div>
+            <img class="decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
+          </div>
+          <p><span>Mon-Thu:</span> 7:00am-8:00pm<br><span>Fri-Sun:</span> 7:00am-10:00pm</p>
           <p class="social-media-icons">
             <i class="fa fa-cc-amex"></i>
             <i class="fa fa-paypal"></i>
@@ -712,7 +721,9 @@
         </div>
         <div class="contact-item">
           <h5 class="contact-title">Location</h5>
-          <img class="contact-decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
+          <div>
+            <img class="decoration" src="img/decor-2-big-white.png" alt="decor-2-white">
+          </div>
           <p>19th Paradise Street Sitia<br>128 Meserole Avenue</p>
           <p class="social-media-icons">
             <i class="fa fa-twitter"></i>
