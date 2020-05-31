@@ -132,7 +132,8 @@ footer{
 
 .decor-small{
   max-width: 192px;
-} */
+}
+*/
 
 /* GENERAL SETTINGS */
 body {
@@ -258,11 +259,6 @@ header {
 	display: flex;
 	flex-flow: column wrap;
 }
-.header-buttons {
-	padding-top: 1.3125rem;
-	display: flex;
-	justify-content: center;
-}
 .header-title img {
 	width: calc(9em + 3vw); /* 160px */
 	height: calc(1.25em + 3vh); /* 20px */
@@ -274,6 +270,11 @@ header {
   font-weight: normal;
   color: #ddd;
 	text-align: center;
+}
+.header-buttons {
+	padding-top: 1.3125rem;
+	display: flex;
+	justify-content: center;
 }
 .header-buttons a {
 	margin: 2rem 1rem; /* 32px 16px */
@@ -294,6 +295,19 @@ header {
 .header-buttons .menu-button:hover {
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.3s;
+}
+/* sm screens */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.header-buttons {
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.header-buttons a:first-child {
+		margin: 2rem 1rem 0.125rem 1rem;
+	}
+	.header-buttons a:last-child {
+		margin: 1rem;
+	}
 }
 
 /* ABOUT SECTION */
@@ -334,7 +348,7 @@ header {
 	height: auto;
 }
 /* sm screens */
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 	.about-container {
 		display: flex;
 		flex-direction: column;
@@ -351,20 +365,21 @@ header {
   background-size: cover;
 	text-align: center;
 }
-#ingredientSection .flex-container {
+.ingredients-container {
 	display: flex;
-	justify-content: center;
+	flex-flow: row nowrap;
+	/* justify-content: center;
+	align-items: center; */
 	align-content: center;
-	align-items: center;
 	padding-top: 7rem;
 }
-#ingredientSection .empty-left {
+.ingredients-empty {
 	max-width: 50%;
 	display: flex;
 	flex: 0 0 50%; /* grow shrink basis */
 }
-#ingredientSection .masking {
-	max-width: 100%;
+.ingredients-text {
+	max-width: 50%;
 	margin-left: -1rem;
 	margin-right: 3rem;
 	padding-top: 3rem;
@@ -375,61 +390,56 @@ header {
 	justify-content: center;
 	align-content: center;
 }
-#ingredientSection .text-right {
-	max-width: 70%;
-	display: flex;
-	flex-flow: column wrap;
+.decoration {
+	max-width: 60%;
+	padding-top: 0.75rem;
+	padding-bottom: 0.625rem;
 }
-#ingredientSection .pastas-bottom {
+.ingredients-title, p {
+  color: #fff;
+}
+.ingredients-title {
+	white-space: nowrap;
+}
+.ingredients-text p {
+	padding-bottom: 2rem;
+}
+.pastas {
 	margin-left: 3rem;
 	margin-right: 3rem;
 	display: flex;
 	justify-content: space-around;
 }
-#ingredientSection .decoration {
-	max-width: 60%;
-	padding-top: 0.75rem;
-	padding-bottom: 0.625rem;
-	transform: translateX(33%);
-}
-#ingredientSection .pastas {
+.pastas > img {
 	max-width: 4rem;
 }
-#ingredientSection h1, p {
-  color: #fff;
-}
-#ingredientSection h1 {
-  font-size: calc(1em + 1.5vw);
-	font-weight: lighter;
-	white-space: nowrap;
-}
-#ingredientSection p {
-	padding-bottom: 2rem;
-  /* font-size: calc(0.5em + 0.5vw); */
-}
+
 /* lg screens */
-@media (max-width: 992px) {
-	#ingredientSection .empty-left {
-		display: none;
-	}
-	#ingredientSection .flex-container {
-		display: flex;
-		flex-flow: column wrap;
-	}
-	#ingredientSection .masking {
-		max-width: 60%;
-		margin: 0;
-	}
-	#ingredientSection p {
+@media (max-width: 991px) {
+	.ingredients-text p {
 	  font-size: calc(0.625em + 0.5vw);
 	}
 }
 /* md screens */
 @media (max-width: 768px) {
-	#ingredientSection .pastas-bottom {
-		margin-left: 1rem;
-		margin-right: 1rem;
+	.ingredients-container {
+		display: flex;
+		flex-flow: column wrap;
 	}
+	.ingredients-text {
+		margin: 0;
+	}
+	.ingredients-empty {
+		display: none;
+	}
+	.pastas {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.ingredients-text {
+		max-width: 80%;
 }
 
 /* MENU SECTION */
@@ -528,28 +538,28 @@ header {
 	color: #6c757d;
 }
 /* lg screens */
-@media (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 	.review-carousel {
 		max-width: 40%;
 		transition: all 0.1s;
 	}
 }
 /* md screens */
-@media (max-width: 768px) {
+@media only screen and (min-width: 578px) and (max-width: 767px) {
 	.review-carousel {
 		max-width: 50%;
 		transition: all 0.1s;
 	}
 }
 /* sm screens */
-@media (max-width: 576px) {
+@media only screen and (min-width: 480px) and (max-width: 577px) {
 	.review-carousel {
 		max-width: 60%;
 		transition: all 0.1s;
 	}
 }
 /* xs screens */
-@media (max-width: 420px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
 	.review-carousel {
 		max-width: 80%;
 		transition: all 0.1s;
