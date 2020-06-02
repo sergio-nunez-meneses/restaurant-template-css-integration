@@ -560,18 +560,19 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-.indicators {
-	font-size: calc(0.25em + 0.5vw);
-	color: #fff;
-}
-/* .indicators > .active {
-} */
 .review-carousel img {
 	padding-bottom: 1rem;
 }
 .review-carousel small {
 	font-size: calc(0.5625em + 0.5vw); /* 9px */
 	color: #6c757d;
+}
+.indicators {
+	border-radius: 50%;
+	font-size: calc(0.25em + 0.5vw);
+	color: #fff;
+	cursor: pointer;
+	transition: color 0.6s ease;
 }
 /* lg screens */
 @media (max-width: 991px) {
