@@ -378,43 +378,43 @@
 
 <body id="pageTop">
 
-  <header>
-
+  <header id="headerSection">
     <section>
-      <nav id="headerNavbar">
+      <nav>
         <div class="navbar-container">
           <div class="logo">
             <a href="#pageTop">
-              <img src="img/logo-transparent.png" alt="logo-lambda">
+              <img id="logo" src="img/logo-transparent.png" alt="logo-lambda">
             </a>
           </div>
-          <button class="hamburger-icon" type="button" data-toggle="" data-target="#hamburgerMenu">
-            <span class="fa fa-bars"></span>
-          </button>
-          <div class="navbar-items">
-            <ul id="hamburgerMenu">
+          <div id="headerNavbar" class="navbar-content">
+            <ul>
               <li>
-                <a class="active" href="#headerSection">Home
+                <a class="navbar-item active-item" href="#headerSection">Home
                 </a>
               </li>
               <li>
-                <a href="#aboutSection">About
+                <a class="navbar-item" href="#aboutSection">About
                 </a>
               </li>
               <li>
-                <a href="#menuSection">Menu
+                <a class="navbar-item" href="#ingredientSection">Ingredients
                 </a>
               </li>
               <li>
-                <a href="#reviewSection">Reviews
+                <a class="navbar-item" href="#menuSection">Menu
                 </a>
               </li>
               <li>
-                <a href="#reservationSection">Reservations
+                <a class="navbar-item" href="#reviewSection">Reviews
                 </a>
               </li>
               <li>
-                <a href="#contactSection">Contact
+                <a class="navbar-item" href="#reservationSection">Reservations
+                </a>
+              </li>
+              <li>
+                <a class="navbar-item" href="#contactSection">Contact
                 </a>
               </li>
               <li>
@@ -430,6 +430,12 @@
               <li>
                 <a href="#">
                   <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="hamburger-icon">
+                  <i class="fa fa-bars">
+                  </i>
                 </a>
               </li>
             </ul>
@@ -745,7 +751,7 @@
     </section>
   </footer>
 
-  <!-- <script type="text/javascript" src="./script.js"></script> -->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
